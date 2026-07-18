@@ -1,0 +1,3 @@
+CREATE DATABASE SCOPED CREDENTIAL cred_zain
+WITH
+IDENTITY = 'Managed Identity'

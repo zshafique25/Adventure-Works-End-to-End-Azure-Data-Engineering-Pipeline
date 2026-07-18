@@ -18,6 +18,8 @@ flowchart LR
 2. **Transform (Silver):** Azure Databricks reads Bronze data, validates it with Great Expectations, cleans/transforms it with PySpark, and writes it to ADLS Gen2 **in Delta Lake format**, authenticating via a Microsoft Entra ID app registration whose credentials are pulled from a Databricks secret scope (never hardcoded). This step runs automatically as part of the ADF pipeline via a Notebook activity on a job cluster.
 3. **Serve (Gold):** Azure Synapse Analytics (Serverless SQL Pool) queries Silver Delta tables directly with `OPENROWSET(..., FORMAT = 'DELTA')`, builds curated Gold views, and materializes them as **Parquet** external tables via `CETAS` — Parquet because Synapse serverless SQL's CETAS command only supports Parquet/CSV as output formats, so this is the standard way to bridge a Delta source into a queryable, BI-friendly external table.
 4. **Visualize:** Power BI connects to the Synapse Serverless SQL endpoint to build the final report.
+<img width="992" height="407" alt="DynamicGitToSilver-pipeline" src="https://github.com/user-attachments/assets/c215d4a5-99c8-432e-8940-9e39c258717e" />
+
 ## Tech Stack
  
 | Layer | Service |

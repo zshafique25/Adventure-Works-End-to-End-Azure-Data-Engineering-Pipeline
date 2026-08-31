@@ -4,7 +4,7 @@ A 4-page Power BI dashboard analyzing three years (2015–2017) of sales, return
 
 **File:** `Dashboard.pbix`
  
-### [View the Live Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOGRlNmNkZGMtODg0Yy00YmM0LWIwM2YtM2E4YTU3OTY3YjE4IiwidCI6IjQ1N2NiNGE0LTIzMWItNGYwOS1iNTA5LWY2OTJmN2NlNmFmMyIsImMiOjl9&embedImagePlaceholder=true)
+### [View the Live Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOGRlNmNkZGMtODg0Yy00YmM0LWIwM2YtM2E4YTU3OTY3YjE4IiwidCI6IjQ1N2NiNGE0LTIzMWItNGYwOS1iNTA5LWY2OTJmN2NlNmFmMyIsImMiOjl9&pageName=908863896c7e2d514f60)
  
 No sign-in required — click through pages, hover the charts, drill through from a product in the Top 10 table, and try the price-adjustment simulator yourself.
 
